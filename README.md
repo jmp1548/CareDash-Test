@@ -8,7 +8,7 @@
 
 # Test
 
-Limited resources only allowed for testing on the follow:
+Limited resources only allowed for testing on the following:
 - Tested in modern browsers (Chrome, Safari, and Firefox).
 - Tested on samsung galaxy s7
 - All breakpoints are designed for
