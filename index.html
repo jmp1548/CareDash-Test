@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CareDash</title>
-  <link rel='shortcut icon' type='image/x-icon' href='/assets/caredash-favicon.ico' />
+  <link rel='shortcut icon' type='image/x-icon' href='./assets/caredash-favicon.ico' />
   <link rel="stylesheet" type="text/css" href="./build/css/main.css">
 </head>
 
@@ -18,7 +18,7 @@
       </a>
       <div class="nav-logo">
         <a href="/">
-          <img src="/assets/caredash-logo.png" alt="Caredash Logo" />
+          <img src="./assets/caredash-logo.png" alt="Caredash Logo" />
         </a>
       </div>
       <ul class="nav-menu">
@@ -36,47 +36,138 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero hero-mobile">
     <div class="hero-container row">
-    <div class="hero-image small-8 columns">
+      <div class="hero-image small-8 columns">
+      </div>
+
+      <div class="hero-form small-4 columns">
+        <form class="form i-form" novalidate>
+          <h4 class="hero-form-header">Sign up with CareDash to edit your provider profile</h4>
+          <div class="form-float">
+            <input type="text" id="first-name" required />
+            <label for="first-name">First Name:</label>
+          </div>
+
+          <div class="form-float">
+            <input type="text" id="last-name" required />
+            <label for="last-name">Last Name:</label>
+          </div>
+
+          <div class="form-float">
+            <input type="text" id="email" required />
+            <label for="email">Email:</label>
+          </div>
+
+          <div class="form-float">
+            <input type="password" id="password" required />
+            <label for="password">Password:</label>
+          </div>
+
+          <div class="form-float">
+            <input type="password" id="confirm-password" required />
+            <label for="confirm-password">Confirm Password:</label>
+          </div>
+
+          <div class="hero-form-button">
+            <input type="button" value="Sign Up" class="button button-secondary" />
+            <input type="submit" value="Log In" class="button button-primary" />
+          </div>
+
+        </form>
+      </div>
     </div>
 
-    <div class="hero-form small-4 columns">
-      <form class="form i-form" novalidate>
-        <div class="form-float">
-          <input type="text" id="first-name" required />
-          <label for="first-name">First Name:</label>
-        </div>
-
-        <div class="form-float">
-          <input type="text" id="last-name" required />
-          <label for="last-name">Last Name:</label>
-        </div>
-
-        <div class="form-float">
-          <input type="text" id="email" required />
-          <label for="email">Email:</label>
-        </div>
-
-        <div class="form-float">
-          <input type="password" id="password" required />
-          <label for="password">Password:</label>
-        </div>
-
-        <div class="form-float">
-          <input type="password" id="confirm-password" required />
-          <label for="confirm-password">Confirm Password:</label>
-        </div>
-
-        <div class="hero-form-button">
-          <a href="#"><input type="button" value="Sign Up" class="button button-secondary" /></a>
-          <input type="submit" value="Log In" class="button button-primary" />
-        </div>
-
-      </form>
-    </div></div>
-
   </section>
+
+  <section class="tile row">
+    <h2>Reasons to sign up as a provider on CareDash</h2>
+    <div class="tile-container">
+      <div class="tile-content">
+        <div class="tile-image">
+          <img src="./assets/medical-icon.png" alt="medical icon" />
+        </div>
+        <div class="tile-body">
+          <h4>
+        Lorem ipsum
+        </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet scelerisque est, nec facilisis diam mollis eu.
+          </p>
+        </div>
+      </div>
+
+      <div class="tile-content">
+        <div class="tile-image">
+          <img src="./assets/medical-icon.png" alt="medical icon" />
+        </div>
+        <div class="tile-body">
+          <h4>
+        Lorem ipsum
+        </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet scelerisque est, nec facilisis diam mollis eu.
+          </p>
+        </div>
+      </div>
+
+      <div class="tile-content">
+        <div class="tile-image">
+          <img src="./assets/medical-icon.png" alt="medical icon" />
+        </div>
+        <div class="tile-body">
+          <h4>
+        Lorem ipsum
+        </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet scelerisque est, nec facilisis diam mollis eu.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-aisle-container">
+      <div class="footer-aisle">
+        <h4 class="footer-header">CareDash</h4>
+        <ul class="footer-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Write a review</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-aisle">
+        <h4 class="footer-header">Specialist</h4>
+        <ul class="footer-list">
+          <li><a href="#">Primary care physicians</a></li>
+          <li><a href="#">Pediatricians</a></li>
+          <li><a href="#">Optometrists</a></li>
+          <li><a href="#">Dentists</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-aisle icon-list">
+      <h4 class="footer-header">Follow us</h4>
+      <ul class="footer-list">
+        <li>
+          <a href="#" class="icon-facebook"></a>
+        </li>
+        <li>
+          <a href="#" class="icon-twitter"></a>
+        </li>
+        <li>
+          <a href="#" class="icon-instagram"></a>
+        </li>
+        <li>
+          <a href="#" class="icon-pinterest"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="./build/js/client.js"></script>
 </body>

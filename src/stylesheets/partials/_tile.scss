@@ -1,0 +1,27 @@
+.tile {
+  padding: 100px 50px;
+
+  h2 {
+    text-align: center;
+    margin: 0 0 100px;
+  }
+}
+
+.tile-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tile-content {
+  padding: 0 50px;
+  .tile-image {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  }
+
+  .tile-body {
+    text-align: center;
+  }
+}

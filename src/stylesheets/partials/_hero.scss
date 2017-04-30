@@ -12,6 +12,7 @@
 
 .hero-image {
   background-image: url('../../assets/medical-banner.jpg');
+  background-position: center;
   background-size: cover;
   height: 450px;
   width: 100%;
@@ -30,6 +31,10 @@
     label {
       opacity: .4;
     }
+  }
+
+  &-header {
+    margin: 0 auto;
   }
 }
 

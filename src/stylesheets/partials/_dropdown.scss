@@ -1,5 +1,4 @@
 .dropdown {
-
   &:after {
     font-family: 'icomoon';
     content: "\E900";
@@ -10,8 +9,14 @@
     transform-origin: 50% 40%;
   }
 
-  &:hover:after {
-    transform: rotate(180deg);
+  &.active {
+    .nav-sub-menu {
+      display: block;
+    }
+
+    &:after {
+      transform: rotate(180deg);
+    }
   }
 }
 
@@ -34,8 +39,4 @@
       }
     }
   }
-}
-
-.dropdown:hover .nav-sub-menu {
-  display: block;
 }
