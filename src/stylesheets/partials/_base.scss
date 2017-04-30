@@ -1,0 +1,32 @@
+* {
+  font-family: 'OpenSans-Regular';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: $midnight;
+  font-size: 14px;
+  text-decoration: none;
+
+  &:hover {
+    color: $eastern-blue;
+  }
+}
+
+input[type='text'],
+input[type='password'] {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid $midnight;
+  transition: border 0.2s ease;
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $eastern-blue;
+  }
+}

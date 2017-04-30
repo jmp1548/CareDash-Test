@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../../assets/fonts/opensans/OpenSans-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../assets/fonts/icons/icomoon.eot');
+  src:  url('../../assets/fonts/icons/icomoon.eot') format('embedded-opentype'),
+    url('../../assets/fonts/icons/icomoon.ttf') format('truetype'),
+    url('../../assets/fonts/icons/icomoon.woff') format('woff'),
+    url('../../assets/fonts/icons/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dropdown:before {
+  content: "\e900";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-pinterest:before {
+  content: "\ead1";
+}

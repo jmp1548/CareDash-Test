@@ -1,0 +1,81 @@
+@include breakpoint ('desktop') {}
+
+@include breakpoint ('tablet') {
+  //navigation
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+
+    &.active {
+      .nav-menu {
+        display: block;
+      }
+    }
+  }
+
+  .nav-menu {
+    display: none;
+    background-color: $white;
+    margin: 0;
+    padding: 16px;
+    width: calc(100% - 34px);
+
+    &-item {
+      position: relative;
+      display: block;
+      padding: 15px 0;
+      margin: 0;
+    }
+  }
+
+  .nav-mobile-trigger {
+    display: block;
+  }
+  //dropdown meny
+  .nav-sub-menu {
+    position: relative;
+    margin: 10px -16px 0;
+    display: none;
+  }
+
+  .dropdown {
+    &.active {
+      .nav-sub-menu {
+        display: block;
+      }
+
+      &:after {
+        transform: rotate(180deg);
+      }
+
+      &:hover {
+        .nav-sub-menu {
+          display: block;
+        }
+
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &:hover {
+      .nav-sub-menu {
+        display: none;
+      }
+
+      &:after {
+        transform: none;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      top: 17px;
+      right: 20px;
+      font-size: 20px;
+    }
+  }
+}
+
+@include breakpoint ('mobile') {}

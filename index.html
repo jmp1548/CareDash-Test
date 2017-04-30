@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CareDash</title>
+  <link rel='shortcut icon' type='image/x-icon' href='/assets/caredash-favicon.ico' />
+  <link rel="stylesheet" type="text/css" href="./build/css/main.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+      <a href="#" class="nav-mobile-trigger i-nav-mobile-trigger">
+        <span></span>
+      </a>
+      <div class="nav-logo">
+        <a href="/">
+          <img src="/assets/caredash-logo.png" alt="Caredash Logo" />
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-menu-item dropdown i-dropdown">
+          <a href="#">Menu Item</a>
+          <ul class="nav-sub-menu">
+            <li class="nav-sub-menu-item"><a href="#">Sub Menu Item</a></li>
+            <li class="nav-sub-menu-item"><a href="#">Another Sub Menu Item</a></li>
+            <li class="nav-sub-menu-item"><a href="#">Yet Another Sub Menu Item</a></li>
+          </ul>
+        </li>
+        <li class="nav-menu-item"><a href="#">Another Menu Item</a></li>
+        <li class="nav-menu-item"><a href="#">Yet Another Menu Item</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-container row">
+    <div class="hero-image small-8 columns">
+    </div>
+
+    <div class="hero-form small-4 columns">
+      <form class="form i-form" novalidate>
+        <div class="form-float">
+          <input type="text" id="first-name" required />
+          <label for="first-name">First Name:</label>
+        </div>
+
+        <div class="form-float">
+          <input type="text" id="last-name" required />
+          <label for="last-name">Last Name:</label>
+        </div>
+
+        <div class="form-float">
+          <input type="text" id="email" required />
+          <label for="email">Email:</label>
+        </div>
+
+        <div class="form-float">
+          <input type="password" id="password" required />
+          <label for="password">Password:</label>
+        </div>
+
+        <div class="form-float">
+          <input type="password" id="confirm-password" required />
+          <label for="confirm-password">Confirm Password:</label>
+        </div>
+
+        <div class="hero-form-button">
+          <a href="#"><input type="button" value="Sign Up" class="button button-secondary" /></a>
+          <input type="submit" value="Log In" class="button button-primary" />
+        </div>
+
+      </form>
+    </div></div>
+
+  </section>
+
+  <script src="./build/js/client.js"></script>
+</body>
+
+</html>
